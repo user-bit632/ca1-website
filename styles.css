@@ -42,7 +42,7 @@ footer {
 	position: fixed; /* This keeps the footer at the bottom of the page and visible at all times regardles of how long the page is or how much the user scrolls or zooms */
 	bottom: 0;
 	width: 100%; /* Makes the footer take up the whole width of the page regardless of how long the text is */
-	background-color: SeaGreen;
+
 }
 
 /* Add a little bit of margin so the text is not right up against the edge of the page */
