@@ -1,0 +1,51 @@
+/* Navigation */
+
+.navigation-bar {
+	margin: 8px;
+}
+
+
+
+/*
+How To Help Page
+Author: Oskar Zygula
+*/
+
+/* Add a green border with rounded corners to clearly differentiate the quiz from the rest of the page */
+.quiz {
+	border-style: solid;
+	border-radius: 6px;
+	border-color: green;
+	border-width: 4px;
+	padding: 12px;
+}
+
+/* Add space above and below the headings to make the page less crowded */
+.headings {
+	margin-top: 24px;
+	margin-bottom: 64px;
+}
+
+/* Add some space above the footer to make the page less crowded */
+footer {
+	margin-top: 32px;
+}
+
+/* Hide the image in the quiz if the screen is smaller than 1200 pixels as it takes up too much space*/
+@media screen and (max-width: 1200px) {
+	#question-image {
+		display: none;
+	}
+}
+
+footer {
+	position: fixed; /* This keeps the footer at the bottom of the page and visible at all times regardles of how long the page is or how much the user scrolls or zooms */
+	bottom: 0;
+	width: 100%; /* Makes the footer take up the whole width of the page regardless of how long the text is */
+	background-color: SeaGreen;
+}
+
+/* Add a little bit of margin so the text is not right up against the edge of the page */
+.footer-text {
+	margin: 10px;
+}
