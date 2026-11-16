@@ -68,40 +68,40 @@ function submitAnswer() {
 			// If answer4 is true that means the user selected that radio button.
 			if (answer4 == true) {
 				// Increase the current question variable by 1 so that next time the code will check the answer for the next question
-				alert("Correct");
+				alert("Correct!");
 				currentQuestion++
 				setQuestion2();
 				break;
 			} else {
-				alert("Incorrect");
+				alert("Incorrect! Try again");
 				break;
 			}
 		case 2:
 			if (answer2 == true) {
-				alert("Correct");
+				alert("Correct!");
 				currentQuestion++
 				setQuestion3();
 				break;
 			} else {
-				alert("Incorrect");
+				alert("Incorrect! Try again");
 				break;
 			}
 		case 3:
 			if (answer3 == true) {
-				alert("Correct");
+				alert("Correct!");
 				currentQuestion++
 				setQuestion4();
 				break;
 			} else {
-				alert("Incorrect");
+				alert("Incorrect! Try again");
 				break;
 			}
 		case 4:
 			if (answer4 == true) {
-				alert("Correct");
+				alert("Correct!");
 				break;
 			} else {
-				alert("Incorrect");
+				alert("Incorrect! Try again");
 				break;
 			}
 		// It should not be possible to get any other value so we don't need a default case
