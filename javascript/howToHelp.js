@@ -12,9 +12,12 @@ function setQuestion2() {
 	document.getElementById("question-link").innerHTML = "https://www.water.ie/conservation/home";
 	// .href changes the a tags href attribute which changse where the link goes
 	document.getElementById("question-link").href = "https://www.water.ie/conservation/home";
-	
+	// .alt changes the alt text
+	document.getElementById("question-image").alt = "Kitchen tap with flowing water";
+	// changes the source of the imge to the new one
 	document.getElementById("question-image").src = "images/water_OZ.webp";
 
+	// changes all the answers to the new ones
 	document.getElementById("answer-1-text").innerHTML = "Between 100 and 200 liters per year";
 	document.getElementById("answer-2-text").innerHTML = "Between 1,000 and 2,000 liters per year";
 	document.getElementById("answer-3-text").innerHTML = "Between 2,500 and 5,000 liters per year";
@@ -27,6 +30,7 @@ function setQuestion3() {
 	document.getElementById("question-link").innerHTML = "https://www.un.org/en/actnow/transport";
 	document.getElementById("question-link").href = "https://www.un.org/en/actnow/transport";
 	
+	document.getElementById("question-image").alt = "Train arriving at a strain station platform";
 	document.getElementById("question-image").src = "images/train_OZ.webp";
 
 	document.getElementById("answer-1-text").innerHTML = "Up 0.5 tons";
@@ -41,6 +45,7 @@ function setQuestion4() {
 	document.getElementById("question-link").innerHTML = "https://amazingfoodanddrink.com/irish-food-miles/";
 	document.getElementById("question-link").href = "https://amazingfoodanddrink.com/irish-food-miles/";
 	
+	document.getElementById("question-image").alt = "Cargo boxes being loaded onto a plane";
 	document.getElementById("question-image").src = "images/air_freight_OZ.webp";
 
 	document.getElementById("answer-1-text").innerHTML = "1.1 killograms";

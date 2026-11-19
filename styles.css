@@ -52,12 +52,10 @@ footer {
 
 /* Hide the image in the quiz if the screen is smaller than 1018 pixels as it takes up too much space*/
 @media screen and (max-width: 1018px) {
-	.question-div {
+	.question-image-div {
 		display: none;
 	}
 }
-
-
 
 /* Add a little bit of margin so the text is not right up against the edge of the page */
 .footer-text {
