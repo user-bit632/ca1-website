@@ -13,7 +13,7 @@ function setQuestion2() {
 	// .href changes the a tags href attribute which changse where the link goes
 	document.getElementById("question-link").href = "https://www.water.ie/conservation/home";
 	
-	document.getElementById("question-image").src = "images/water_OZ.jpg";
+	document.getElementById("question-image").src = "images/water_OZ.webp";
 
 	document.getElementById("answer-1-text").innerHTML = "Between 100 and 200 liters per year";
 	document.getElementById("answer-2-text").innerHTML = "Between 1,000 and 2,000 liters per year";
@@ -27,7 +27,7 @@ function setQuestion3() {
 	document.getElementById("question-link").innerHTML = "https://www.un.org/en/actnow/transport";
 	document.getElementById("question-link").href = "https://www.un.org/en/actnow/transport";
 	
-	document.getElementById("question-image").src = "images/train_OZ.jpg";
+	document.getElementById("question-image").src = "images/train_OZ.webp";
 
 	document.getElementById("answer-1-text").innerHTML = "Up 0.5 tons";
 	document.getElementById("answer-2-text").innerHTML = "Up to 1 ton";
@@ -41,7 +41,7 @@ function setQuestion4() {
 	document.getElementById("question-link").innerHTML = "https://amazingfoodanddrink.com/irish-food-miles/";
 	document.getElementById("question-link").href = "https://amazingfoodanddrink.com/irish-food-miles/";
 	
-	document.getElementById("question-image").src = "images/air_freight_OZ.jpg";
+	document.getElementById("question-image").src = "images/air_freight_OZ.webp";
 
 	document.getElementById("answer-1-text").innerHTML = "1.1 killograms";
 	document.getElementById("answer-2-text").innerHTML = "1.5 killograms";
