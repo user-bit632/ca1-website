@@ -13,7 +13,8 @@
 		<!-- Our stylesheet -->
 		<link rel="stylesheet" href="styles.css">		
 	</head>
-	<body>
+	<!-- When the page is loaded fill in the contents for the first question-->
+	<body onLoad="setQuestion1()">
 		<div class="container">
 			<div class="navigation-bar">
 				<ul class="nav">
@@ -39,6 +40,7 @@
 				<h1>How You Can Help</h1>
 				<p>Helping The Life On Land goal requires us all to work together.</p>
 				<p>Take the quiz below to learn about how you can help improve Life On Land by caring for the environment and being more sustainable in your everyday life.</p>
+				<p>Each question will have a link to a page or article with important information about sustainability and the environment. (And an answer to the question)</p>
 			</div>
 		</div>
 		
@@ -46,35 +48,35 @@
 		
 		<div class="container text-center quiz">
 			<div class="row question-text">
-				<p id="question-text">Recycling is important to reduce how much waste ends up in landfills and pollutes the land.<br>According to this guide on recycling by mywaste.ie, In Ireland, What bin should be used to dispose of plastic waste?</p>
-				<a id="question-link" href="https://mywaste.ie/dispose-waste/at-home/three-bin-system/" target="_blank">https://mywaste.ie/dispose-waste/at-home/three-bin-system/</a>
+				<p id="question-text"></p>
+				<a id="question-link" href="" target="_blank"></a>
 			</div>
 			<br>
 			<div class="row">
 				<div class="col question-image-div">
-					<img id="question-image" class="question-image-div" alt="Large pile of junk and scrap" src="images/landfill_OZ.webp">
+					<img id="question-image" class="question-image-div" alt="" src="">
 				</div>
 				<div class="col answers">
 				
+					<!-- The form has no contents in the HTML because the contents is filled in using Javascript. The setQuestion1() sets the contents for the first questions. -->
+					<!-- Doing it this way is more readable as all the contents for the quiz is in functions in the Javascript file. -->
 					<div class="form-field">
-					
 						<!-- input tag is the radio button. If all the radio buttons have the same name then you will only be able to choose 1 -->
 						<input class="radio" name="radios" type="radio" id="answer1" />
 						<!-- label tag is the text next to the button. The for attribute links the text to the button so that you can also click the text -->
-						<label id="answer-1-text" for="answer1">The recycling bin</label>
+						<label id="answer-1-text" for="answer1"></label>
 						  
 						<input class="radio" name="radios" type="radio" id="answer2" />
-						<label id="answer-2-text" for="answer2">The brown bin</label>
+						<label id="answer-2-text" for="answer2"></label>
 						  
 						<input class="radio" name="radios" type="radio" id="answer3" />
-						<label id="answer-3-text" for="answer3">The residual waste bin</label>
+						<label id="answer-3-text" for="answer3"></label>
 						  
 						<input class="radio" name="radios" type="radio" id="answer4" />
-						<label id="answer-4-text" for="answer4">Any bin, It does not matter</label>
+						<label id="answer-4-text" for="answer4"></label>
 						  
 						<!-- The onClick attribute will run the submitAnswer() function in the Javascript when the button is clicked -->
 						<button type="button" onclick="submitAnswer()" class="btn">Check Answer</button>
-					  
 					</div>
 				</div>
 			</div>

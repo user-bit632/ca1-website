@@ -4,20 +4,37 @@
 // Set the current question to 1 as soon as the page loads. This is needed so that the answer checking code later knows we are on the first question.
 let currentQuestion = 1;
 
-// This function sets the question and all answers to those for the second question
-function setQuestion2() {
+
+// This function sets the question text, image and all answers to those for the first question.
+// This function is called as soon as the page is loaded using the onLoad event in the body tag of the html.
+function setQuestion1() {
 	// document.getElementById selects the element that will be changed. .innerHTML is what that element will be changed to.
-	document.getElementById("question-text").innerHTML = "Clean drinking water is essential for life of land.<br>According to this guide on saving water by Uisce Éireann, how much water can you save each year by fixing dripping taps?";
+	document.getElementById("question-text").innerHTML = "Recycling is important to reduce how much waste ends up in landfills and pollutes the land.<br>According to this guide on recycling by mywaste.ie, In Ireland, What bin should be used to dispose of plastic waste?";
 	// .innerHTML changes how the link appears on the page
-	document.getElementById("question-link").innerHTML = "https://www.water.ie/conservation/home";
+	document.getElementById("question-link").innerHTML = "https://mywaste.ie/dispose-waste/at-home/three-bin-system/";
 	// .href changes the a tags href attribute which changse where the link goes
-	document.getElementById("question-link").href = "https://www.water.ie/conservation/home";
+	document.getElementById("question-link").href = "https://mywaste.ie/dispose-waste/at-home/three-bin-system/";
 	// .alt changes the alt text
-	document.getElementById("question-image").alt = "Kitchen tap with flowing water";
+	document.getElementById("question-image").alt = "Large pile of junk and scrap";
 	// changes the source of the imge to the new one
-	document.getElementById("question-image").src = "images/water_OZ.webp";
+	document.getElementById("question-image").src = "images/landfill_OZ.webp";
 
 	// changes all the answers to the new ones
+	document.getElementById("answer-1-text").innerHTML = "The recycling bin";
+	document.getElementById("answer-2-text").innerHTML = "The brown bin";
+	document.getElementById("answer-3-text").innerHTML = "The residual waste bin";
+	document.getElementById("answer-4-text").innerHTML = "Any bin, It does not matter";
+}
+
+// This function sets the question text, image and all answers to those for the second question
+function setQuestion2() {
+	document.getElementById("question-text").innerHTML = "Clean drinking water is essential for life of land.<br>According to this guide on saving water by Uisce Éireann, how much water can you save each year by fixing dripping taps?";
+	document.getElementById("question-link").innerHTML = "https://www.water.ie/conservation/home";
+	document.getElementById("question-link").href = "https://www.water.ie/conservation/home";
+	
+	document.getElementById("question-image").alt = "Kitchen tap with flowing water";
+	document.getElementById("question-image").src = "images/water_OZ.webp";
+
 	document.getElementById("answer-1-text").innerHTML = "Between 100 and 200 liters per year";
 	document.getElementById("answer-2-text").innerHTML = "Between 1,000 and 2,000 liters per year";
 	document.getElementById("answer-3-text").innerHTML = "Between 2,500 and 5,000 liters per year";
@@ -54,6 +71,8 @@ function setQuestion4() {
 	document.getElementById("answer-4-text").innerHTML = "2 killograms";
 }
 
+
+
 // This function is called when the Check Answer button from the page is clicked
 function submitAnswer() {
 	// document.getElementById selects the radio button with the given id.
@@ -64,7 +83,7 @@ function submitAnswer() {
 	let answer4 = document.getElementById("answer4").checked;
 	
 	
-	// This checks if the user has selected an option. If they clicked the button without selecting anything the returns so nothing happens.
+	// This checks if the user has selected an option. If they clicked the button without selecting anything it returns so nothing happens.
 	
 	// || means OR
 	// ! means NOT
@@ -122,6 +141,6 @@ function submitAnswer() {
 				alert("Incorrect! Try again");
 				break;
 			}
-		// It should not be possible to get any other value so we don't need a default case
+		// It should not be possible to get any other value so I don't think we don't need a default case
 	}
 }
