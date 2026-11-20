@@ -13,7 +13,8 @@
 		<!-- Our stylesheet -->
 		<link rel="stylesheet" href="styles.css">		
 	</head>
-	<body>
+	<!-- When the page is loaded fill in the contents for the first question-->
+	<body onLoad="setQuestion1()">
 		<div class="container">
 			<div class="navigation-bar">
 				<ul class="nav">
@@ -37,8 +38,9 @@
 		<div class="container text-center headings">
 			<div class="row">
 				<h1>How You Can Help</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+				<p>Helping The Life On Land goal requires us all to work together.</p>
+				<p>Take the quiz below to learn about how you can help improve Life On Land by caring for the environment and being more sustainable in your everyday life.</p>
+				<p>Each question will have a link to a page or article with important information about sustainability and the environment. (And an answer to the question)</p>
 			</div>
 		</div>
 		
@@ -46,33 +48,35 @@
 		
 		<div class="container text-center quiz">
 			<div class="row question-text">
-				<p id="question-text">Question 1 text</p>
+				<p id="question-text"></p>
+				<a id="question-link" href="" target="_blank"></a>
 			</div>
+			<br>
 			<div class="row">
-				<div id="question-image" class="col">
-					<img alt="Placeholder Image" src="https://placehold.co/600x400">
+				<div class="col question-image-div">
+					<img id="question-image" class="question-image-div" alt="" src="">
 				</div>
 				<div class="col answers">
 				
+					<!-- The form has no contents in the HTML because the contents is filled in using Javascript. The setQuestion1() sets the contents for the first questions. -->
+					<!-- Doing it this way is more readable as all the contents for the quiz is in functions in the Javascript file. -->
 					<div class="form-field">
-					
 						<!-- input tag is the radio button. If all the radio buttons have the same name then you will only be able to choose 1 -->
-						<input class="radio" name="radios" type="radio" id="question1" />
+						<input class="radio" name="radios" type="radio" id="answer1" />
 						<!-- label tag is the text next to the button. The for attribute links the text to the button so that you can also click the text -->
-						<label id="answer-1-text" for="question1">First answer</label>
+						<label id="answer-1-text" for="answer1"></label>
 						  
-						<input class="radio" name="radios" type="radio" id="question2" />
-						<label id="answer-2-text" for="question2">Second answer</label>
+						<input class="radio" name="radios" type="radio" id="answer2" />
+						<label id="answer-2-text" for="answer2"></label>
 						  
-						<input class="radio" name="radios" type="radio" id="question3" />
-						<label id="answer-3-text" for="question3">Third answer</label>
+						<input class="radio" name="radios" type="radio" id="answer3" />
+						<label id="answer-3-text" for="answer3"></label>
 						  
-						<input class="radio" name="radios" type="radio" id="question4" />
-						<label id="answer-4-text" for="question4">Fourth answer</label>
+						<input class="radio" name="radios" type="radio" id="answer4" />
+						<label id="answer-4-text" for="answer4"></label>
 						  
-						<!-- Thte onClick attribute will run the submitAnswer() function in the Javascript when the button is clicked -->
+						<!-- The onClick attribute will run the submitAnswer() function in the Javascript when the button is clicked -->
 						<button type="button" onclick="submitAnswer()" class="btn">Check Answer</button>
-					  
 					</div>
 				</div>
 			</div>
@@ -82,11 +86,17 @@
 		
 		<!-- The footer section contains attribution information for the images on the page -->
 		<footer>
-			<span class="footer-text">Placeholder image from <a href="https://placehold.co/" target="_blank">https://placehold.co/</a></span> <!-- Setting the target to _blank makes the link open in a new tab to improve user experience -->
+			<span class="footer-text">Question 1 image: <a href="https://www.publicdomainpictures.net/en/view-image.php?image=22055" target="_blank">https://www.publicdomainpictures.net/en/view-image.php?image=22055</a> Licenced under CC0 Public Domain</span> <!-- Setting the target to _blank makes the link open in a new tab to improve user experience -->
+			<br>
+			<span class="footer-text">Question 2 image: <a href="https://www.publicdomainpictures.net/en/view-image.php?image=48905" target="_blank">https://www.publicdomainpictures.net/en/view-image.php?image=48905</a> Licenced under CC0 Public Domain</span> 
+			<br>
+			<span class="footer-text">Question 3 image: <a href="https://www.publicdomainpictures.net/en/view-image.php?image=174982" target="_blank">https://www.publicdomainpictures.net/en/view-image.php?image=174982</a> Licenced under CC0 Public Domain</span> 
+			<br>
+			<span class="footer-text">Question 4 image: <a href="https://www.publicdomainpictures.net/en/view-image.php?image=12202" target="_blank">https://www.publicdomainpictures.net/en/view-image.php?image=12202</a> Licenced under CC0 Public Domain</span>
 		</footer>
 		
 		<!-- Link to our Javascript file. -->
-		<script src="howToHelp.js"></script>
+		<script src="javascript/howToHelp.js"></script>
 		
 		<!-- Bootstrap -->
 	    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
