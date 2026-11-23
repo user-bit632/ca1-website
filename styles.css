@@ -55,13 +55,13 @@ Author: Oskar Zygula
 /* Change color of the page border based on if the user is using dark or light mode */
 @media (prefers-color-scheme: dark) {
 	.quiz {
-		border-color: #009933;
+		border-color: #006622;
 	}
 }
 
 @media (prefers-color-scheme: light) {
 	.quiz {
-		border-color: #a4dbb6;
+		border-color: #8bdaa5;
 	}
 }
 
