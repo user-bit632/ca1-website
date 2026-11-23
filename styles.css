@@ -45,22 +45,29 @@ Author: Oskar Zygula
 
 
 /* Add a green border with rounded corners to clearly differentiate the quiz from the rest of the page */
-.quiz {
+/* #afterQuizElement is the text that shows after you finish the quiz that lets you restart */
+#quiz, #afterQuizElement {
 	border-style: solid;
 	border-radius: 6px;
 	border-width: 4px;
 	padding: 28px;
 }
 
+/* Makes an element invisible */
+.hide {
+	display: none;
+}
+
+
 /* Change color of the page border based on if the user is using dark or light mode */
 @media (prefers-color-scheme: dark) {
-	.quiz {
+	#quiz, #afterQuizElement {
 		border-color: #006622;
 	}
 }
 
 @media (prefers-color-scheme: light) {
-	.quiz {
+	#quiz, #afterQuizElement {
 		border-color: #8bdaa5;
 	}
 }
@@ -72,6 +79,11 @@ Author: Oskar Zygula
 	margin-top: 24px;
 	margin-bottom: 64px;
 }
+
+#question-number {
+	font-size: 24px;
+}
+
 
 /* Add some space above the footer to make the page less crowded */
 footer {

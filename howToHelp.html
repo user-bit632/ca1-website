@@ -40,14 +40,17 @@
 				<h1>How You Can Help</h1>
 				<p>Helping The Life On Land goal requires us all to work together.</p>
 				<p>Take the quiz below to learn about how you can help improve Life On Land by caring for the environment and being more sustainable in your everyday life.</p>
-				<p>Each question will have a link to a page or article with important information about sustainability and the environment. (And an answer to the question)</p>
+				<p>Each question has a link to a page or article with important information about sustainability and the environment. Read the page or article to get the answer.</p>
 			</div>
 		</div>
 		
 		
 		
-		<div class="container text-center quiz">
+		<div class="container text-center" id="quiz">
 			<div class="row question-text">
+				<!-- The form has no contents in the HTML because the contents is filled in using Javascript. The setQuestion1() sets the contents for the first questions. -->
+				<!-- Doing it this way is more readable because all the contents for the quiz is in functions in the Javascript file. -->
+				<p id="question-number"></p>
 				<p id="question-text"></p>
 				<a id="question-link" href="" target="_blank"></a>
 			</div>
@@ -58,8 +61,7 @@
 				</div>
 				<div class="col answers">
 				
-					<!-- The form has no contents in the HTML because the contents is filled in using Javascript. The setQuestion1() sets the contents for the first questions. -->
-					<!-- Doing it this way is more readable as all the contents for the quiz is in functions in the Javascript file. -->
+
 					<div class="form-field">
 						<!-- input tag is the radio button. If all the radio buttons have the same name then you will only be able to choose 1 -->
 						<input class="radio" name="radios" type="radio" id="answer1" />
@@ -80,6 +82,13 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		
+		<!-- This element is shown after you finish the quiz -->
+		<!-- It starts with the hide class and is shown after the quiz -->
+		<div class="container text-center hide" id="afterQuizElement">
+			<p>You finished the quiz!</p>
+			<button type="button" class="btn" onclick="restartQuiz()">Restart Quiz</button>
 		</div>
 		
 		
