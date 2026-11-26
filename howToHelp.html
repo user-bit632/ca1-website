@@ -61,9 +61,7 @@
 					<img id="question-image" class="question-image-div" alt="" src="">
 				</div>
 				<div class="col answers">
-				
-
-					<div class="form-field">
+					<form name="Quiz" class="form-field">
 						<!-- input tag is the radio button. If all the radio buttons have the same name then you will only be able to choose 1 -->
 						<input class="radio" name="radios" type="radio" id="answer1" />
 						<!-- label tag is the text next to the button. The for attribute links the text to the button so that you can also click the text -->
@@ -77,10 +75,14 @@
 						  
 						<input class="radio" name="radios" type="radio" id="answer4" />
 						<label id="answer-4-text" for="answer4"></label>
-						  
+						
+						<!-- If there is an issues with the form validation, like if the user doesn't select anything this span will show the error message -->
+						<span id="error-span"></span>
+						
+						
 						<!-- The onClick attribute will run the submitAnswer() function in the Javascript when the button is clicked -->
-						<button type="button" onclick="submitAnswer()" class="btn">Check Answer</button>
-					</div>
+						<button type="button" onClick="submitAnswer()" class="btn">Check Answer</button>
+					</form>
 				</div>
 			</div>
 		</div>

@@ -53,6 +53,10 @@ Author: Oskar Zygula
 	padding: 28px;
 }
 
+#error-span {
+	color: red;
+}
+
 /* Makes an element invisible */
 .hide {
 	display: none;

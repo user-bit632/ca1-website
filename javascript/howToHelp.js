@@ -9,10 +9,10 @@ let currentQuestion = 1;
 // This function is called as soon as the page is loaded using the onLoad event in the body tag of the html.
 function setQuestion1() {
 	// document.getElementById selects the element that will be changed. .innerHTML is what that element will be changed to.
-	document.getElementById("question-text").innerHTML = "Recycling is important to reduce how much waste ends up in landfills and pollutes the land.<br>According to this guide on recycling by mywaste.ie, In Ireland, What bin should be used to dispose of plastic waste?";
-	document.getElementById("question-number").innerHTML = "Question 1"
+	document.getElementById("question-text").textContent = "Recycling is important to reduce how much waste ends up in landfills and pollutes the land.<br>According to this guide on recycling by mywaste.ie, In Ireland, What bin should be used to dispose of plastic waste?";
+	document.getElementById("question-number").textContent = "Question 1"
 	// .innerHTML changes how the link appears on the page
-	document.getElementById("question-link").innerHTML = "https://mywaste.ie/dispose-waste/at-home/three-bin-system/";
+	document.getElementById("question-link").textContent = "https://mywaste.ie/dispose-waste/at-home/three-bin-system/";
 	// .href changes the a tags href attribute which changse where the link goes
 	document.getElementById("question-link").href = "https://mywaste.ie/dispose-waste/at-home/three-bin-system/";
 	// .alt changes the alt text
@@ -21,58 +21,58 @@ function setQuestion1() {
 	document.getElementById("question-image").src = "images/landfill_OZ.webp";
 
 	// changes all the answers to the new ones
-	document.getElementById("answer-1-text").innerHTML = "The recycling bin";
-	document.getElementById("answer-2-text").innerHTML = "The brown bin";
-	document.getElementById("answer-3-text").innerHTML = "The residual waste bin";
-	document.getElementById("answer-4-text").innerHTML = "Any bin, It does not matter";
+	document.getElementById("answer-1-text").textContent = "The recycling bin";
+	document.getElementById("answer-2-text").textContent = "The brown bin";
+	document.getElementById("answer-3-text").textContent = "The residual waste bin";
+	document.getElementById("answer-4-text").textContent = "Any bin, It does not matter";
 }
 
 // This function sets the question text, image and all answers to those for the second question
 function setQuestion2() {
-	document.getElementById("question-text").innerHTML = "Clean drinking water is essential for life of land.<br>According to this guide on saving water by Uisce Éireann, how much water can you save each year by fixing dripping taps?";
-	document.getElementById("question-number").innerHTML = "Question 2"
-	document.getElementById("question-link").innerHTML = "https://www.water.ie/conservation/home";
+	document.getElementById("question-text").textContent = "Clean drinking water is essential for life of land.<br>According to this guide on saving water by Uisce Éireann, how much water can you save each year by fixing dripping taps?";
+	document.getElementById("question-number").textContent = "Question 2"
+	document.getElementById("question-link").textContent = "https://www.water.ie/conservation/home";
 	document.getElementById("question-link").href = "https://www.water.ie/conservation/home";
 	
 	document.getElementById("question-image").alt = "Kitchen tap with flowing water";
 	document.getElementById("question-image").src = "images/water_OZ.webp";
 
-	document.getElementById("answer-1-text").innerHTML = "Between 100 and 200 liters per year";
-	document.getElementById("answer-2-text").innerHTML = "Between 1,000 and 2,000 liters per year";
-	document.getElementById("answer-3-text").innerHTML = "Between 2,500 and 5,000 liters per year";
-	document.getElementById("answer-4-text").innerHTML = "Between 5,000 and 10,000 liters per year";
+	document.getElementById("answer-1-text").textContent = "Between 100 and 200 liters per year";
+	document.getElementById("answer-2-text").textContent = "Between 1,000 and 2,000 liters per year";
+	document.getElementById("answer-3-text").textContent = "Between 2,500 and 5,000 liters per year";
+	document.getElementById("answer-4-text").textContent = "Between 5,000 and 10,000 liters per year";
 }
 
 // This function sets the question and all answers to those for the third question
 function setQuestion3() {
-	document.getElementById("question-text").innerHTML = "Global warming threatens all life on land. One way we can help slow down global warming is by reducing our carbon emmissions.<br>According to this article by the United Nations, by how much can you reduce your yearly carbon emissions by taking public transport insted of a car?";
-	document.getElementById("question-number").innerHTML = "Question 3"
-	document.getElementById("question-link").innerHTML = "https://www.un.org/en/actnow/transport";
+	document.getElementById("question-text").textContent = "Global warming threatens all life on land. One way we can help slow down global warming is by reducing our carbon emmissions.<br>According to this article by the United Nations, by how much can you reduce your yearly carbon emissions by taking public transport insted of a car?";
+	document.getElementById("question-number").textContent = "Question 3"
+	document.getElementById("question-link").textContent = "https://www.un.org/en/actnow/transport";
 	document.getElementById("question-link").href = "https://www.un.org/en/actnow/transport";
 	
 	document.getElementById("question-image").alt = "Train arriving at a strain station platform";
 	document.getElementById("question-image").src = "images/train_OZ.webp";
 
-	document.getElementById("answer-1-text").innerHTML = "Up 0.5 tons";
-	document.getElementById("answer-2-text").innerHTML = "Up to 1 ton";
-	document.getElementById("answer-3-text").innerHTML = "Up to 2 tons";
-	document.getElementById("answer-4-text").innerHTML = "Up to 3 tons";
+	document.getElementById("answer-1-text").textContent = "Up 0.5 tons";
+	document.getElementById("answer-2-text").textContent = "Up to 1 ton";
+	document.getElementById("answer-3-text").textContent = "Up to 2 tons";
+	document.getElementById("answer-4-text").textContent = "Up to 3 tons";
 }
 
 // This function sets the question and all answers to those for the fourth question
 function setQuestion4() {
-	document.getElementById("question-text").innerHTML = '"Food Miles" Is a measurement of how far food has traveled from where it was produced to where a customer buys it.<br>Importing food from far away leads to high carbon emissions which contribute to global warming.<br>According to this article from amazingfoodanddrink.com, How many killograrms of CO2 are produced per killogram of food transported by air freight per 1,000 kilometers?';
-	document.getElementById("question-number").innerHTML = "Question 4"
-	document.getElementById("question-link").innerHTML = "https://amazingfoodanddrink.com/irish-food-miles/";
+	document.getElementById("question-text").textContent = '"Food Miles" Is a measurement of how far food has traveled from where it was produced to where a customer buys it.<br>Importing food from far away leads to high carbon emissions which contribute to global warming.<br>According to this article from amazingfoodanddrink.com, How many killograrms of CO2 are produced per killogram of food transported by air freight per 1,000 kilometers?';
+	document.getElementById("question-number").textContent = "Question 4"
+	document.getElementById("question-link").textContent = "https://amazingfoodanddrink.com/irish-food-miles/";
 	document.getElementById("question-link").href = "https://amazingfoodanddrink.com/irish-food-miles/";
 	
 	document.getElementById("question-image").alt = "Cargo boxes being loaded onto a plane";
 	document.getElementById("question-image").src = "images/air_freight_OZ.webp";
 
-	document.getElementById("answer-1-text").innerHTML = "1.1 killograms";
-	document.getElementById("answer-2-text").innerHTML = "1.5 killograms";
-	document.getElementById("answer-3-text").innerHTML = "1.6 killograms";
-	document.getElementById("answer-4-text").innerHTML = "2 killograms";
+	document.getElementById("answer-1-text").textContent = "1.1 killograms";
+	document.getElementById("answer-2-text").textContent = "1.5 killograms";
+	document.getElementById("answer-3-text").textContent = "1.6 killograms";
+	document.getElementById("answer-4-text").textContent = "2 killograms";
 }
 
 
@@ -81,19 +81,20 @@ function setQuestion4() {
 function submitAnswer() {
 	// document.getElementById selects the radio button with the given id.
 	// .checked returns true or false depending on whether the user selected that option or not.
-	let answer1 = document.getElementById("answer1").checked;
-	let answer2 = document.getElementById("answer2").checked;
-	let answer3 = document.getElementById("answer3").checked;
-	let answer4 = document.getElementById("answer4").checked;
-	
+	const answer1 = document.getElementById("answer1").checked;
+	const answer2 = document.getElementById("answer2").checked;
+	const answer3 = document.getElementById("answer3").checked;
+	const answer4 = document.getElementById("answer4").checked;
 	
 	// This checks if the user has selected an option. If they clicked the button without selecting anything it returns so nothing happens.
-	
+	// This is form validation.
 	// || means OR
 	// ! means NOT
-	if (!(answer1 || answer2 || answer3 || answer4)) { 
+	if (!(answer1 || answer2 || answer3 || answer4)) {
+		document.getElementById("error-span").textContent = "Please select an answer";
 		return
 	}
+	
 	
 	// The correct answer will depend on the current question. This switch statement runs the code for the question we are currentlly on.
 	// This switch statement is essentially the answer key for the quiz.
@@ -141,6 +142,8 @@ function submitAnswer() {
 			if (answer3 == true) {
 				alert("Correct!");
 				document.getElementById("answer3").checked = false;
+				
+				// hide the quiz and show the after quiz element
 				document.getElementById("quiz").classList.add("hide");
 				document.getElementById("afterQuizElement").classList.remove("hide");
 				break;
@@ -152,9 +155,12 @@ function submitAnswer() {
 	}
 }
 
+
 function restartQuiz() {
 	currentQuestion = 1;
 	setQuestion1();
+	
+	// Hide the after quiz element and show the quiz again
 	document.getElementById("quiz").classList.remove("hide");
 	document.getElementById("afterQuizElement").classList.add("hide");
 }
