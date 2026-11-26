@@ -91,8 +91,12 @@ function submitAnswer() {
 	// || means OR
 	// ! means NOT
 	if (!(answer1 || answer2 || answer3 || answer4)) {
+		// If the user didn't select anything show an error
 		document.getElementById("error-span").textContent = "Please select an answer";
 		return
+	} else {
+		// Get rid of the error when the user selects something and submits the answer.
+		document.getElementById("error-span").textContent = "";
 	}
 	
 	
