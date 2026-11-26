@@ -9,7 +9,7 @@ let currentQuestion = 1;
 // This function is called as soon as the page is loaded using the onLoad event in the body tag of the html.
 function setQuestion1() {
 	// document.getElementById selects the element that will be changed. .innerHTML is what that element will be changed to.
-	document.getElementById("question-text").textContent = "Recycling is important to reduce how much waste ends up in landfills and pollutes the land.<br>According to this guide on recycling by mywaste.ie, In Ireland, What bin should be used to dispose of plastic waste?";
+	document.getElementById("question-text").textContent = "Recycling is important to reduce how much waste ends up in landfills and pollutes the land. According to this guide on recycling by mywaste.ie, In Ireland, What bin should be used to dispose of plastic waste?";
 	document.getElementById("question-number").textContent = "Question 1"
 	// .innerHTML changes how the link appears on the page
 	document.getElementById("question-link").textContent = "https://mywaste.ie/dispose-waste/at-home/three-bin-system/";
@@ -29,7 +29,7 @@ function setQuestion1() {
 
 // This function sets the question text, image and all answers to those for the second question
 function setQuestion2() {
-	document.getElementById("question-text").textContent = "Clean drinking water is essential for life of land.<br>According to this guide on saving water by Uisce Éireann, how much water can you save each year by fixing dripping taps?";
+	document.getElementById("question-text").textContent = "Clean drinking water is essential for life of land. According to this guide on saving water by Uisce Éireann, how much water can you save each year by fixing dripping taps?";
 	document.getElementById("question-number").textContent = "Question 2"
 	document.getElementById("question-link").textContent = "https://www.water.ie/conservation/home";
 	document.getElementById("question-link").href = "https://www.water.ie/conservation/home";
@@ -45,7 +45,7 @@ function setQuestion2() {
 
 // This function sets the question and all answers to those for the third question
 function setQuestion3() {
-	document.getElementById("question-text").textContent = "Global warming threatens all life on land. One way we can help slow down global warming is by reducing our carbon emmissions.<br>According to this article by the United Nations, by how much can you reduce your yearly carbon emissions by taking public transport insted of a car?";
+	document.getElementById("question-text").textContent = "Global warming threatens all life on land. One way we can help slow down global warming is by reducing our carbon emmissions. According to this article by the United Nations, by how much can you reduce your yearly carbon emissions by taking public transport insted of a car?";
 	document.getElementById("question-number").textContent = "Question 3"
 	document.getElementById("question-link").textContent = "https://www.un.org/en/actnow/transport";
 	document.getElementById("question-link").href = "https://www.un.org/en/actnow/transport";
@@ -61,7 +61,7 @@ function setQuestion3() {
 
 // This function sets the question and all answers to those for the fourth question
 function setQuestion4() {
-	document.getElementById("question-text").textContent = '"Food Miles" Is a measurement of how far food has traveled from where it was produced to where a customer buys it.<br>Importing food from far away leads to high carbon emissions which contribute to global warming.<br>According to this article from amazingfoodanddrink.com, How many killograrms of CO2 are produced per killogram of food transported by air freight per 1,000 kilometers?';
+	document.getElementById("question-text").textContent = '"Food Miles" Is a measurement of how far food has traveled from where it was produced to where a customer buys it. Importing food from far away leads to high carbon emissions which contribute to global warming. According to this article from amazingfoodanddrink.com, How many killograrms of CO2 are produced per killogram of food transported by air freight per 1,000 kilometers?';
 	document.getElementById("question-number").textContent = "Question 4"
 	document.getElementById("question-link").textContent = "https://amazingfoodanddrink.com/irish-food-miles/";
 	document.getElementById("question-link").href = "https://amazingfoodanddrink.com/irish-food-miles/";
